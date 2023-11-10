@@ -1,0 +1,213 @@
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+/*  */
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 60px;
+    transition: var(--transition-2);
+    z-index: 4;
+    color: #000 !important;
+}
+
+.header.active {
+    background-color: var(--eerie-black);
+    box-shadow: var(--shadow);
+}
+
+.header .container,
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-top .logo {
+    z-index: 1;
+    font-size: 1.7rem !important;
+    margin-top: 0.7rem;
+}
+
+.container .logo {
+    z-index: 1;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-stretch: wider;
+    font-size: 1.7rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background-color: #fff;
+    height: 100vh;
+    max-width: 280px;
+    width: 100%;
+    padding: 25px;
+    overflow-y: auto;
+    z-index: 11;
+    transition: 0.25s var(--cubic-out);
+    visibility: hidden;
+}
+
+.navbar.active {
+    visibility: visible;
+    transform: translateX(-280px);
+    transition-duration: 0.5s;
+}
+
+
+.nav-open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-close-btn {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-open-btn svg {
+    color: #000;
+    height: 28px;
+}
+
+.nav-close-btn .span {
+    background-color: rgb(0, 0, 0) !important;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    transition: var(--transition-1);
+}
+
+.nav-close-btn .one {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.nav-close-btn .two {
+    transform: rotate(-45deg);
+}
+
+.nav-close-btn:is(:hover, :focus-visible) .span {
+    background-color: var(--radical-red);
+}
+
+.navbar-list {
+    width: 100%;
+    display: flex;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: transparent;
+    z-index: 0;
+    transition: var(--transition-1);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay.active {
+    opacity: 0.75;
+    pointer-events: all;
+}
+
+
+
+#nav-content {
+    border-radius: 20px;
+    width: 100%;
+    height: 50rem;
+    padding: 40px;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-button {
+    /* font-family: var(--ff-recoleta); */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    cursor: pointer;
+    z-index: 1;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+}
+
+
+
+
+
+
+.nav-button span {
+    transition: opacity 1s;
+}
+
+.nav-button .fas {
+    transition: min-width 0.2s;
+}
+
+
+
+.animated-text {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 40rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .elem {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container .elem h1:nth-child(1) {
+    top: 0%;
+}
+
+.container .elem h1 {
+    text-transform: lowercase;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.5;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: 'Syne', sans-serif;
+    font-weight: 100;
+    font-size: 2vmax !important;
+    color: #000;
+    width: 100%;
+}
