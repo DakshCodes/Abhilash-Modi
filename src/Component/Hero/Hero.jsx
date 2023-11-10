@@ -32,12 +32,6 @@ const Hero = () => {
             y: "-100%",
             ease: 'expo.inOut',
             duration: 2,
-        }).to(".wrapper-img", {
-            opacity: 1,
-            width: 700,
-            height: 800,
-            ease: 'expo.inOut',
-            duration: 1,
         }).to(".hero-container .title ", 0.4, {
             opacity: 1,
             x: 0,
@@ -99,12 +93,7 @@ const Hero = () => {
                 <div className="hero-container">
                     <h1 className="title">Abhilash <span>Modi.</span></h1>
                 </div>
-                <div className="moto">
-                    <h2>Let's inspire people,
-                        <br />
-                        not attract .....
-                    </h2>
-                </div>
+
                 <div className="expore-btn">
                     <button>
                         <a href="#">

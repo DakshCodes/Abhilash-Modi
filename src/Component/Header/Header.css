@@ -11,7 +11,7 @@
     width: 100%;
     padding: 10px 60px;
     transition: var(--transition-2);
-    z-index: 4;
+    z-index: 999;
     color: #000 !important;
 }
 
@@ -186,6 +186,7 @@
     align-items: center;
 }
 
+
 .container .elem {
     position: relative;
     height: 50%;
@@ -199,15 +200,16 @@
 }
 
 .container .elem h1 {
+    padding-top: 8px;
     text-transform: lowercase;
     position: absolute;
     top: 100%;
     left: 0;
     line-height: 0.5;
-    /* font-family: 'Bebas Neue', sans-serif; */
-    font-family: 'Syne', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Syne', sans-serif; */
     font-weight: 100;
-    font-size: 2vmax !important;
-    color: #000;
+    font-size: 2rem;
+    color: #fff;
     width: 100%;
 }

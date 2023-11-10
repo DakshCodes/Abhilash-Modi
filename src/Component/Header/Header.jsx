@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import gsap, { Expo } from 'gsap'; // Import GreenSock Animation Platform
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -106,7 +107,7 @@ const Header = () => {
                     gsap.to(h1s[index], {
                         top: "-=100%",
                         // ease: Expo.easeInOut,
-                        duration: 1.5,
+                        duration: 2,
                         onComplete: function () {
                             gsap.set(this._targets[0], {
                                 top: "100%"
@@ -120,7 +121,7 @@ const Header = () => {
                     gsap.to(h1s[index], {
                         top: "-=100%",
                         ease: Expo.easeInOut,
-                        duration: 1.5,
+                        duration: 2,
                         onComplete: function () {
                             // Schedule the next animation when this one completes
                             requestAnimationFrame(animate);
@@ -134,9 +135,9 @@ const Header = () => {
     return (
         <header className="header" data-header>
             <div className="container">
-                <a href="#" className="logo">
-                    AM.
-                </a>
+                <Link to={'/'} className="logo" >
+                    AM
+                </Link>
                 <div className="animated-text">
                     <div className="elem">
                         <h1>an author</h1>
@@ -159,9 +160,9 @@ const Header = () => {
                 </button>
                 <nav className="navbar" data-navbar>
                     <div className="navbar-top">
-                        <a href="#" className="logo">
+                        <Link to={'/'} className="logo" data-nav-toggler>
                             AM
-                        </a>
+                        </Link>
                         <button className="nav-close-btn" aria-label="close menu" data-nav-toggler>
                             <span className="span one" />
                             <span className="span two" />
@@ -170,9 +171,9 @@ const Header = () => {
                     <ul className="navbar-list">
                         <div id="nav-content">
                             <div className="nav-button"><i className="fas fa-palette" /><span>About</span></div>
-                            <a href="./impact.html">
+                            <Link to={'/impact'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Imapact</span></div>
-                            </a>
+                            </Link>
                             <div className="nav-button"><i className="fas fa-images" /><span>Seekh</span></div>
                             <div className="nav-button"><i className="fas fa-images" /><span>Videos</span></div>
                             <div className="nav-button"><i className="fas fa-images" /><span>My Thoughts</span></div>

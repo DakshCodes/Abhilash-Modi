@@ -7,8 +7,8 @@
     padding: 0 35px;
     align-items: center;
     justify-content: center;
-    gap: 7rem;
-    min-height: 115vh;
+    gap: 5rem;
+    min-height: 100vh;
     /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
 }
 
@@ -45,7 +45,7 @@
 
 
 .wrapper svg {
-    top: 50%;
+    top: 55%;
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -77,13 +77,14 @@
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% / 2) - 12px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    margin-top: 5rem;
 }
 
 .carousel::-webkit-scrollbar {
@@ -114,7 +115,7 @@
     scroll-snap-align: start;
     height: 480px;
     list-style: none;
-    background: #fff;
+    background: transparent;
     cursor: pointer;
     flex-direction: column;
     border-radius: 8px;
