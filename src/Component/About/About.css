@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+.about {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #92b8cd;
+}
+
+/* footer ********/
+.gap-heading {
+  width: 20px;
+}
+
+.about-head {
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.about-head-div {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;
+  font-size: 7vmax;
+  letter-spacing: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-head-div span {
+  display: inline-block;
+}
+
+
+/* about content css */
+
+
+/* about ********/
+.about-content .section-title {
+  text-align: left;
+}
+
+
+.about__wrapp {
+  margin-top: 8rem !important ;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img {
+  width: 50%;
+  height: auto;
+  margin: auto 0;
+}
+
+.about__txt {
+  height: auto;
+  width: 48%;
+}
+
+.about__txt {
+  position: sticky;
+  /* padding-right: 70px; */
+}
+
+.about__p {
+  display: flex;
+  flex-direction: column;
+  line-height:normal;
+}
+
+.about__p>p .word {
+  margin-top: 4px;
+  font-size: 1.3vw;
+  background: linear-gradient(to right,
+      rgb(255, 255, 255) 50%,
+      rgb(37, 37, 37) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 100;
+  font-family: 'Syne', sans-serif;
+}
+
+.about__img {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about__img img {
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+
+
+@media (max-width :1000px) {
+  .about__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__img {
+    border-radius: 4rem 4rem 0 0;
+    width: 100% !important;
+    height: 70% !important;
+  }
+
+  .about__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about__txt {
+    height: auto;
+    width: 100%;
+  }
+  
+  .about__txt {
+    position: sticky;
+    /* padding-right: 70px; */
+  }
+  
+  .about__p {
+    width: 100%;
+    display:inline-flex !important;
+    line-height: normal;
+  }
+
+  .about__p>p .word {
+    font-size: 3vw;
+    background: linear-gradient(to right,
+        rgb(255, 255, 255) 50%,
+        rgb(37, 37, 37) 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 100;
+    font-family: 'Syne', sans-serif;
+  }
+}

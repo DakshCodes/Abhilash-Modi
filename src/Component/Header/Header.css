@@ -15,6 +15,20 @@
     color: #000 !important;
 }
 
+@media (max-width : 400px) {
+    .header {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .container .logo {
+        font-size: 2rem !important;
+    }
+    .nav-open-btn svg {
+        color: #000;
+        height: 33px !important;
+    }
+}
+
 .header.active {
     background-color: var(--eerie-black);
     box-shadow: var(--shadow);
@@ -193,6 +207,7 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 0.7rem;
 }
 
 .container .elem h1:nth-child(1) {
@@ -200,12 +215,12 @@
 }
 
 .container .elem h1 {
-    padding-top: 8px;
+    padding-top: 3px;
     text-transform: lowercase;
     position: absolute;
     top: 100%;
     left: 0;
-    line-height: 0.5;
+    line-height: 0.8;
     font-family: 'Bebas Neue', sans-serif;
     /* font-family: 'Syne', sans-serif; */
     font-weight: 100;

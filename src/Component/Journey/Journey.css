@@ -1,0 +1,262 @@
+.center-ex {
+    /* position: relative; */
+    background-color: #92b8cd;
+    color: rgba(245, 247, 250, 1);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stack-area {
+    width: 100%;
+    height: 300vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.right-ex,
+.left-ex {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    flex-basis: 50%;
+
+}
+
+.left-ex {
+    padding-top: 70px;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.active .active-title {
+    color: #fff;
+    font-size: 24px;
+}
+
+.card {
+    width: 650px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 6mm;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    z-index: 4;
+}
+
+.card:nth-child(2) {
+    z-index: 3;
+}
+
+.card:nth-child(3) {
+    z-index: 2;
+}
+
+.card:nth-child(4) {
+    z-index: 1;
+}
+
+.sub {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.card.active {
+    transform-origin: bottom left;
+}
+
+
+.left-ex .title {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-ex .title h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.left-ex .title svg {
+    height: 5rem;
+}
+
+
+
+.left-ex .title h3 {
+    text-align: center;
+    left: 0%;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 4rem;
+    color: #fff;
+}
+
+
+.sub-title {
+    width: 420px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.sub-title button {
+    font-family: Soria;
+    font-size: 10px;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    border-radius: 8mm;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+.experience {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    border-radius: 6mm;
+}
+
+.active {
+    visibility: hidden;
+
+}
+
+
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.experience-wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.experience:hover .experience-wrapper {
+    box-shadow: 2px 35px 32px -8px #fff;
+    -webkit-box-shadow: 2px 35px 32px -8px #fff;
+    -moz-box-shadow: 2px 35px 32px -8px #fff;
+}
+
+.experience-wrapper::before,
+.experience-wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    border-radius: 6mm;
+}
+
+.experience-wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.experience-wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.experience:hover .experience-wrapper::before,
+.experience-wrapper::after {
+    opacity: 1;
+}
+
+.experience:hover .experience-wrapper::after {
+    height: 120px;
+}
+
+.experience:hover .experience-title {
+    opacity: 1;
+}
+
+.experience-title {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 100;
+    color: #fff;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+}
+
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+
+}

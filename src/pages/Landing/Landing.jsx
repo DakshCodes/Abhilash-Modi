@@ -1,10 +1,16 @@
 import React from 'react'
+import About from '../../Component/About/About'
+import Featured from '../../Component/Featured/Featured'
 import Hero from '../../Component/Hero/Hero'
+import Journey from '../../Component/Journey/Journey'
 
 const Landing = () => {
     return (
         <>
             <Hero />
+            <About />
+            {/* <Journey /> */}
+            <Featured />
         </>
     )
 }

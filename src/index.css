@@ -69,18 +69,19 @@ body {
 
 
 
-:focus-visible {
-  outline-offset: 4px;
-}
+
 
 ::-webkit-scrollbar {
-  width: 1px;
+  display: none;
+  width: 8px;
+  background-color: #000;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fff;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: #fff;
+  border-radius: 20px;
 }
