@@ -82,6 +82,17 @@
     animation: back 100s linear infinite;
 }
 
+
+@media (max-width : 380px) {
+  
+    
+    .hero-container h1 {
+
+        font-size: 7vmax !important;
+    }
+
+}
+
 .hero-container span {
     display: inline-block;
     font-family: 'Bebas Neue', sans-serif;
@@ -290,9 +301,9 @@
 
     .hero-container {
         position: absolute;
-      bottom: -30%;
-      left: 50%;
-      transform: translate(-50%,10%);
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, 10%);
     }
 
 

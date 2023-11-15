@@ -22,6 +22,12 @@ function PreLoader() {
                 opacity: 0,
                 ease: "expo.inOut",
             });
+            gsap.to(".preloader", {
+                y: "-100%",
+                ease: "expo.inOut",
+                delay:3
+            });
+
 
         };
 
