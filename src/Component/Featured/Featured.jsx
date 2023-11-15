@@ -19,6 +19,7 @@ import featured19 from '../../assets/images/featured/19.png'
 import featured21 from '../../assets/images/featured/21.jpg'
 import featured22 from '../../assets/images/featured/22.jpg'
 import featured24 from '../../assets/images/featured/24.jpg'
+import Effortless from '../Effortless'
 
 
 const bulkImages = [

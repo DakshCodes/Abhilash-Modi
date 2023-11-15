@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import Header from './Component/Header/Header'
+import { AnimatePresence } from 'framer-motion';
 import Impact from './pages/Imapct/Impact'
 import Landing from './pages/Landing/Landing'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
+import PreLoader from './Component/Preloader/PreLoder';
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
 
 
 
- 
+
   useEffect(() => {
     (
       async () => {
@@ -33,6 +35,11 @@ function App() {
 
   return (
     <>
+      <AnimatePresence mode='wait'>
+        {
+          PreLoader()
+        }
+      </AnimatePresence>
       <Header />
       <Routes>
         <Route path='/' element={<Landing />} />

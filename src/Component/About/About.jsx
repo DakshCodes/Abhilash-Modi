@@ -4,6 +4,7 @@ import sirpic from '../../assets/images/am-pic4.jpg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger' // Import ScrollTrigger
 import SplitType from 'split-type'
+import Effortless from '../Effortless'
 
 const About = () => {
     useEffect(() => {
@@ -89,6 +90,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+           <Effortless />
         </div>
     )
 }

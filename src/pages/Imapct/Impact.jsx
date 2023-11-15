@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import React, { useEffect } from 'react'
+import Effortless from '../../Component/Effortless';
 import './Impact.css'
 
 const Impact = () => {
@@ -168,6 +169,8 @@ const Impact = () => {
                     </h1>
                 </div>
             </div>
+            <Effortless />
+
         </>
     )
 }

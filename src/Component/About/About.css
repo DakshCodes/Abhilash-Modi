@@ -50,37 +50,39 @@
 
 
 .about__wrapp {
-  margin-top: 8rem !important ;
+  margin-top: 8rem !important;
+  margin-bottom: 0rem !important;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
 .about__img {
   width: 50%;
-  height: auto;
+  height: 100%;
   margin: auto 0;
 }
 
 .about__txt {
-  height: auto;
+  height: 100%;
   width: 48%;
 }
 
 .about__txt {
+  text-align: center;
   position: sticky;
-  /* padding-right: 70px; */
 }
 
 .about__p {
   display: flex;
   flex-direction: column;
-  line-height:normal;
+  line-height: normal;
 }
 
+
+
 .about__p>p .word {
-  margin-top: 4px;
+  word-break: break-all;
   font-size: 1.3vw;
   background: linear-gradient(to right,
       rgb(255, 255, 255) 50%,
@@ -92,23 +94,43 @@
   -webkit-background-clip: text;
   font-weight: 100;
   font-family: 'Syne', sans-serif;
+
 }
 
 .about__img {
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__img img {
   display: block;
   width: 90%;
-  height: 90%;
+  height: 80%;
   object-fit: cover;
+}
+
+.shape-about {
+  height: 100px;
+  animation: updown 1.2s ease-in-out alternate infinite;
+  margin-bottom: 5rem;
 }
 
 
 
+
 @media (max-width :1000px) {
+  .about-head {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+
   .about__wrapp {
     display: flex;
     flex-direction: column;
@@ -119,7 +141,7 @@
   .about__img {
     border-radius: 4rem 4rem 0 0;
     width: 100% !important;
-    height: 70% !important;
+    height: 85% !important;
   }
 
   .about__img img {
@@ -133,20 +155,23 @@
     height: auto;
     width: 100%;
   }
-  
+
   .about__txt {
     position: sticky;
     /* padding-right: 70px; */
   }
-  
+
   .about__p {
+    text-align: left;
     width: 100%;
-    display:inline-flex !important;
+    display: inline-flex !important;
     line-height: normal;
+    padding: 20px 10px;
   }
 
   .about__p>p .word {
-    font-size: 3vw;
+    word-break: break-all;
+    font-size: 4vw;
     background: linear-gradient(to right,
         rgb(255, 255, 255) 50%,
         rgb(37, 37, 37) 50%);
