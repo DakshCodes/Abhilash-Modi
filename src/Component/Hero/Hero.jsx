@@ -22,7 +22,7 @@ const Hero = () => {
             opacity:1,
             x: 0,
             duration:1,
-            delay:2
+            delay:3
         })
       
 
@@ -46,7 +46,7 @@ const Hero = () => {
             y: "-100%",
             ease: 'expo.inOut',
             duration: 2,
-            delay: 1.5,
+            delay: 2,
         }).to(".hero-container .title ", 0.4, {
             opacity: 1,
             x: 0,

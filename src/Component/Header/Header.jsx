@@ -46,7 +46,7 @@ const Header = () => {
             x: 0,
             rotation: 0,
             ease: Expo.easeInOut,
-            delay: 1.2,
+            delay: 4,
         });
 
         gsap.to(".animated-text", 2, {

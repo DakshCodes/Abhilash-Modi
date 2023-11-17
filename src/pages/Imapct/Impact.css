@@ -1,5 +1,5 @@
 .impact-main {
-    height: 100vh;
+    height: max-content;
     align-items: center;
     background-color: #92b8cd !important;
     display: flex;
@@ -9,6 +9,7 @@
     justify-content: center;
     gap: 5rem;
     min-height: 100vh;
+    overflow: hidden;
     /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
 }
 
@@ -28,9 +29,9 @@
     display: block;
     content: "";
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     margin-left: -14px;
     background-color: #000;
 }
@@ -157,7 +158,45 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .one h1 {
+        font-size: 14vmin;
+    }
+
+
+    .one h1:before {
+        display: none;
+    
+    }
+
+
+    .wrapper-impact svg:first-child {
+        left: 0px;
+    }
+
+    .carousel-impact .card-impact {
+        height: 380px;
+    }
+
+    .wrapper-impact svg:last-child {
+        right: 0px;
+        /* rotate: 180deg; */
+    }
+
     .wrapper-impact .carousel-impact {
         grid-auto-columns: 100%;
+    }
+
+    .impact-main {
+        align-items: center;
+        background-color: #92b8cd !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+        min-height: max-content;
+        /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
     }
 }

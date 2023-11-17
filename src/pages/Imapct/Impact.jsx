@@ -169,7 +169,6 @@ const Impact = () => {
                     </h1>
                 </div>
             </div>
-            <Effortless />
 
         </>
     )

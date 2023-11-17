@@ -9,16 +9,12 @@ function PreLoader() {
             gsap.set(".preloader", {
                 opacity: 1,
             })
-            gsap.set(".loader-pre", {
-                opacity: 0,
-                x: -100,
-            })
             gsap.to(".loader-pre", 2, {
                 opacity: 1,
                 x: 0,
                 ease: "expo.inOut",
             });
-            gsap.to(".preloader", 4, {
+            gsap.to(".preloader", 5, {
                 opacity: 0,
                 ease: "expo.inOut",
             });

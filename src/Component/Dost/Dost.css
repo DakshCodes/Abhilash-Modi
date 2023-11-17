@@ -1,5 +1,5 @@
 .dost-main {
-    background-color: #fff;
+    background-color: #92b8cd !important;
     height: fit-content;
     width: 100%;
     padding: 100px 0;
@@ -55,7 +55,7 @@
 #container input,
 #container select,
 #container textarea {
-    color: #5a5a5a;
+    color: #000;
     font: inherit;
     margin: 0;
 }
@@ -80,7 +80,7 @@
 }
 
 #container h1 {
-    color: #474544;
+    color: #000;
     font-size: 38px;
     font-weight: 700;
     letter-spacing: 7px;
@@ -90,7 +90,7 @@
 }
 
 .underline {
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #000;
     margin: -0.512em auto;
     width: 80px;
 }
@@ -102,7 +102,7 @@
 
 .icon {
     display: block;
-    fill: #474544;
+    fill: #000;
     height: 50px;
     margin: 0 auto;
     width: 50px;
@@ -119,8 +119,8 @@
 #container textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
-    color: #474544;
+    border-bottom: solid 2px #000;
+    color: #000;
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -183,27 +183,27 @@
 }
 
 ::-webkit-input-placeholder {
-    color: #474544;
+    color: #000;
 }
 
 :-moz-placeholder {
-    color: #474544;
+    color: #000;
     opacity: 1;
 }
 
 ::-moz-placeholder {
-    color: #474544;
+    color: #000;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: #474544;
+    color: #000;
 }
 
 #form_button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px #000;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     font-family: "Helvetica", Arial, sans-serif;
@@ -220,8 +220,8 @@
 }
 
 #form_button:hover {
-    background: #474544;
-    color: #f2f3eb;
+    background: #000;
+    color: #fff;
 }
 
 @media screen and (max-width: 768px) {

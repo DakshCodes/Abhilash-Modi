@@ -40,24 +40,36 @@ const Dost = () => {
                 </div>
                 <div className="email">
                     <label htmlFor="email" />
-                    <input type="email" placeholder="My e-mail is" name="email" id="email_input" required />
+                    <input type="text" placeholder="My conatact no." name="email" id="email_input" required />
                 </div>
                 <div className="telephone">
                     <label htmlFor="name" />
-                    <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required />
+                    <input type="text" placeholder="My whatsapp no." name="telephone" id="telephone_input" required />
+                </div>
+                <div className="telephone">
+                    <label htmlFor="name" />
+                    <input type="text" placeholder="My Age" name="telephone" id="telephone_input" required />
+                </div>
+                <div className="telephone">
+                    <label htmlFor="name" />
+                    <input type="text" placeholder="My Profession / Qualification" name="telephone" id="telephone_input" required />
                 </div>
                 <div className="subject">
                     <label htmlFor="subject" />
-                    <select placeholder="Subject line" name="subject" id="subject_input" required>
-                        <option disabled hidden selected>Subject line</option>
-                        <option>I'd like to start a project</option>
-                        <option>I'd like to ask a question</option>
-                        <option>I'd like to make a proposal</option>
+                    <select placeholder="Gender" name="Gender" id="subject_input" required>
+                        <option disabled hidden selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
                     </select>
                 </div>
+                <div className="telephone">
+                    <label htmlFor="name" />
+                    <input type="text" placeholder="My City" name="telephone" id="telephone_input" required />
+                </div>
+
                 <div className="message">
                     <label htmlFor="message" />
-                    <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols={30} rows={5} required defaultValue={""} />
+                    <textarea name="message" placeholder="Type Your Query / Problem here (In english or texting language)" id="message_input" cols={30} rows={5} required defaultValue={""} />
                 </div>
                 <div className="submit">
                     <input type="submit" defaultValue="Send Message" id="form_button" />
