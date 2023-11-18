@@ -7,6 +7,7 @@ import { Routes, Route, useNavigate, Link } from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
 import PreLoader from './Component/Preloader/PreLoder';
 import Dost from './Component/Dost/Dost';
+import About from "./pages/about/About"
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
 
         {/* Dost */}
         <Route path='/dost' element={<Dost />} />
+        <Route path='/about' element={<About />} />
 
       </Routes>
 
