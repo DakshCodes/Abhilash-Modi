@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "framer-motion": "^10.16.5",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
-    "split-type": "^0.3.4"
+    "react-vertical-timeline-component": "^3.6.0",
+    "split-type": "^0.3.4",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

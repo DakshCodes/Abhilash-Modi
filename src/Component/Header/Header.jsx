@@ -171,7 +171,9 @@ const Header = () => {
                     </div>
                     <ul className="navbar-list">
                         <div id="nav-content">
+                            <Link to={'/about'}  data-nav-toggler>
                             <div className="nav-button"><i className="fas fa-palette" /><span>About</span></div>
+                            </Link>
                             <Link to={'/impact'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Imapact</span></div>
                             </Link>
