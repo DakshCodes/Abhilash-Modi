@@ -170,7 +170,7 @@ const Journey = () => {
                         </h3>
                     </div>
                 </div>
-                <div className="active">
+                <div className="active-jou">
                     <div className="active-title">
                         The Journey
                     </div>
