@@ -27,10 +27,6 @@ const Hero = () => {
         })
 
 
-        gsap.set('.moto h2', {
-            opacity: 0,
-            x: '40',
-        });
         gsap.set(".expore-btn button", {
             opacity: 0,
             x: "100",

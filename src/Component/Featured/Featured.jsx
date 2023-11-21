@@ -66,8 +66,8 @@ const Featured = () => {
                     <ul className="marquee-content">
                         {
                             bulkImages.map((img, index) => (
-                                <li>
-                                    <img key={index} src={img} />
+                                <li key={index}>
+                                    <img  src={img} />
                                 </li>
                             ))
                         }

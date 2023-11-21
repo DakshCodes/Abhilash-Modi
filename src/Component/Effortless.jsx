@@ -5,7 +5,7 @@ const Effortless = () => {
     return (
         <div className='effortless'>
             {/* <p><span class="fancy">underline</span></p> */}
-            <p class="large rise">Effortless</p>
+            <p className="large rise">Effortless</p>
         </div>
     )
 }

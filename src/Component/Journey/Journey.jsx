@@ -177,43 +177,43 @@ const Journey = () => {
                 </div>
                 <div className="right-ex">
                     <div className="cards">
-                        <a data-color="white" className="card" href alt="Mythrill" target="_blank">
+                        <a href='#' data-color="white" className="card"  alt="Mythrill" target="_blank">
                             <div className="experience">
                                 <div className="experience-wrapper">
-                                    <img src={tedx} className="cover-image" />
+                                    <img src={tedx} className="cover-image" alt='journey' />
                                 </div>
                                 <span className="experience-title">JoshTalk
                                 </span>
                             </div>
                         </a>
-                        <a data-color="#901808" className="card" alt="Mythrill" target="_blank">
+                        <a href='#' data-color="#901808" className="card" alt="Mythrill" target="_blank">
                             <div className="experience">
                                 <div className="experience-wrapper">
-                                    <img src={josh} className="cover-image" />
+                                    <img src={josh} className="cover-image" alt='journey' />
                                 </div>
                                 <span className="experience-title">TedX</span>
                             </div>
                         </a>
-                        <a data-color="green" className="card" alt="Mythrill" target="_blank">
+                        <a href='#' data-color="green" className="card" alt="Mythrill" target="_blank">
                             <div className="experience">
                                 <div className="experience-wrapper">
-                                    <img src={tils} className="cover-image" />
+                                    <img src={tils} className="cover-image" alt='journey' />
                                 </div>
                                 <span className="experience-title">Tils</span>
                             </div>
                         </a>
-                        <a data-color="purple" className="card" alt="Mythrill" target="_blank">
+                        <a href='#' data-color="purple" className="card" alt="Mythrill" target="_blank">
                             <div className="experience">
                                 <div className="experience-wrapper">
-                                    <img src={records} className="cover-image" />
+                                    <img src={records} className="cover-image" alt='journey' />
                                 </div>
                                 <span className="experience-title">Records</span>
                             </div>
                         </a>
-                        <a data-color="blue" className="card" alt="Mythrill" target="_blank">
+                        <a href='#' data-color="blue" className="card" alt="Mythrill" target="_blank">
                             <div className="experience">
                                 <div className="experience-wrapper">
-                                    <img src={motivator} className="cover-image" />
+                                    <img src={motivator} className="cover-image" alt='journey' />
                                 </div>
                                 <span className="experience-title">Motivator</span>
                             </div>

@@ -32,7 +32,7 @@ function PreLoader() {
 
     return (
         <div className='preloader'>
-            <p class="loader-pre rise">Effortless</p>
+            <p className="loader-pre rise">Effortless</p>
         </div>
     );
 }

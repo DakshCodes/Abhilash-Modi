@@ -110,9 +110,7 @@ const Blogs = () => {
       const response = await Getblogs();
       if (response.success) {
         setBlogsData(response.data)
-        console.log(response.data)
       } else {
-        console.log(response.mssage);
       }
 
     } catch (error) {

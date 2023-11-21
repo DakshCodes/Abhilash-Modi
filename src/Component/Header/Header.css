@@ -4,16 +4,18 @@
 
 /*  */
 .header {
-    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 10px 60px;
     transition: var(--transition-2);
-    z-index: 999;
+    z-index: 999999;
     color: #000 !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px) saturate(100%);
+    -webkit-backdrop-filter: blur(7px) saturate(100%);
+    background-color: transparent;
+    border-radius: 12px;
 }
 
 @media (max-width : 400px) {
@@ -70,7 +72,7 @@
     width: 100%;
     padding: 25px;
     overflow-y: auto;
-    z-index: 11;
+    z-index: 999;
     transition: 0.25s var(--cubic-out);
     visibility: hidden;
 }
@@ -86,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 99;
 }
 
 .nav-close-btn {
