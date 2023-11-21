@@ -8,6 +8,9 @@ import Footer from './Component/Footer/Footer'
 import PreLoader from './Component/Preloader/PreLoder';
 import Dost from './Component/Dost/Dost';
 import About from "./pages/about/About"
+import Seekh from './pages/Seekh/Seekh';
+import Blogs from './pages/Blogs/Blogs';
+import SingleBlog from './pages/Blogs/SingleBlog';
 
 
 function App() {
@@ -62,10 +65,13 @@ function App() {
 
         {/* Impact */}
         <Route path='/impact' element={<Impact />} />
-
+        {/* Seekh */}
+        <Route path='/seekh' element={<Seekh />} />
+        <Route path='/blogs' element={<Blogs />} />
         {/* Dost */}
         <Route path='/dost' element={<Dost />} />
         <Route path='/about' element={<About />} />
+        <Route path='/blogs/:id' element={<SingleBlog />} />
 
       </Routes>
 

@@ -1,0 +1,22 @@
+.main{
+    font-family: 'Syne', sans-serif;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shadow-new{
+    box-shadow: 0px 19px 34px 0px rgba(0,0,0,0.1);
+}
+
+ul li {
+    list-style-type: circle;
+}
