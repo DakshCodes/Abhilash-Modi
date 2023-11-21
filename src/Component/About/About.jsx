@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import './About.css'
+import './Info.css'
 import sirpic from '../../assets/images/am-pic4.jpg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger' // Import ScrollTrigger
 import SplitType from 'split-type'
 import Effortless from '../Effortless'
 
-const About = () => {
+const Info = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger) // Register ScrollTrigger plugin
 
@@ -90,9 +90,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-           <Effortless />
         </div>
     )
 }
 
-export default About
+export default Info

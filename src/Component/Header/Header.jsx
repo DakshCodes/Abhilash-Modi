@@ -37,8 +37,7 @@ const Header = () => {
 
         gsap.set(".container .nav-open-btn", {
             opacity: 0,
-            x: "-100",
-            rotation: 10,
+            x: "100",
         });
 
         gsap.to(".container .logo", 2, {
@@ -46,12 +45,13 @@ const Header = () => {
             x: 0,
             rotation: 0,
             ease: Expo.easeInOut,
-            delay: 4,
+            delay: 2.6,
         });
 
         gsap.to(".animated-text", 2, {
             opacity: 1,
             ease: Expo.easeInOut,
+            delay: 2.6,
         });
 
         gsap.to(".container .nav-open-btn", 2, {
@@ -59,6 +59,7 @@ const Header = () => {
             x: 0,
             rotation: 0,
             ease: Expo.easeInOut,
+            delay: 2.6,
         });
 
 
@@ -171,8 +172,8 @@ const Header = () => {
                     </div>
                     <ul className="navbar-list">
                         <div id="nav-content">
-                            <Link to={'/about'}  data-nav-toggler>
-                            <div className="nav-button"><i className="fas fa-palette" /><span>About</span></div>
+                            <Link to={'/about'} data-nav-toggler>
+                                <div className="nav-button"><i className="fas fa-palette" /><span>About</span></div>
                             </Link>
                             <Link to={'/impact'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Imapact</span></div>

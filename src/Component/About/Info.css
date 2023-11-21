@@ -40,8 +40,6 @@
 }
 
 
-/* about content css */
-
 
 /* about ********/
 .about-content .section-title {
@@ -69,7 +67,7 @@
 }
 
 .about__txt {
-  text-align: center;
+  text-align: left !important;
   position: sticky;
 }
 
@@ -122,16 +120,25 @@
 
 
 @media (max-width :1000px) {
+
+
+
   .about-head {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
   }
+  .about-head-div {
+    font-size: 8vmax; 
+  }
+  
 
   .about__wrapp {
+    margin-top: 3rem !important;
+    margin-bottom: 4rem !important;
     display: flex;
     flex-direction: column;
     align-items: center;

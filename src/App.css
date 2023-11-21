@@ -5,29 +5,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
   color: #f7f7f7;
   text-align: center;
-font-size: 4rem;
+  font-size: 4rem;
 }
+
 #app {
   height: 100%;
 }
+
 html,
 body {
   position: relative;
   height: 100%;
-max-width: 1250px;
-margin: auto;
+  /* max-width: 1250px; */
+  /* margin: auto; */
 }
-.main{
+
+.main {
   margin-top: 50px;
 }
+
 body {
   background-color: #92b8cd !important;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  
+
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 5px;
@@ -38,7 +43,7 @@ body {
   padding-top: 20px;
   padding-bottom: 50px;
   height: 70vh;
-  
+
 }
 
 .swiper-slide {
@@ -53,6 +58,7 @@ body {
   width: 100%;
   background-color: #f7f7f7;
 }
+
 .myswiper {
   height: 70vh;
   width: 50%;
@@ -60,6 +66,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .photos {
   background-position: center;
   background-size: cover;
@@ -69,28 +76,30 @@ body {
   width: 50%;
   height: 300px;
   margin-right: 0;
-  -webkit-box-reflect: below 0.01px
-    linear-gradient(transparent, transparent, #0006);
+  -webkit-box-reflect: below 0.01px linear-gradient(transparent, transparent, #0006);
   border-radius: 10px;
   border: rgb(64, 67, 62) solid 3px;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0.5rem;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background-color: rgb(34, 28, 28);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: #f7f7f7;
   border-radius: 1rem;
   border: 2px solid transparent;
   background-clip: content-box;
 }
+
 .journey {
   backdrop-filter: blur(20px);
   padding: 50px 0;
-max-width: 1250px;
+  max-width: 1250px;
   margin: 2rem auto;
   border-radius: 10px;
   position: relative;
@@ -110,6 +119,7 @@ max-width: 1250px;
   list-style-type: none;
   position: 1;
 }
+
 .journey ul li::after {
   content: "";
   position: absolute;
@@ -150,11 +160,13 @@ max-width: 1250px;
   left: -55px;
   top: 15px;
 }
+
 .journey ul li:nth-child(odd) div::before {
   left: -30px;
   border-width: 8px 16px 8px 0;
   border-color: transparent rgb(255, 255, 255) transparent transparent;
 }
+
 .journey ul li:nth-child(even) div {
   left: -750px;
   top: 15px;
@@ -165,6 +177,7 @@ max-width: 1250px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent rgb(255, 255, 255);
 }
+
 .journey ul li::after {
   transition: background 0.5s ease-in-out;
 }
@@ -172,45 +185,56 @@ max-width: 1250px;
 .journey ul li:nth-child(odd) div {
   transform: translate3d(200px, 0, 0);
 }
+
 .journey ul li:nth-child(even) div {
   transform: translate3d(200px, 0, 0);
 }
+
 @media screen and (max-width: 1120px) {
   .journey div {
     width: 100%;
   }
+
   .journey ul li:nth-child(even) div {
     left: -650px;
   }
+
   .journey ul li:nth-child(odd) div {
     left: -150px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .journey ul li div {
     width: 250px;
   }
+
   .journey ul li:nth-child(even) div {
     left: -500px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .journey ul li {
     margin-left: 20px;
   }
+
   .journey ul li div {
     width: 70vw;
   }
+
   .journey ul li:nth-child(even) div {
     left: -150px;
   }
+
   .journey ul li:nth-child(even) div::before {
     left: -30px;
     border-width: 8px 16px 8px 0;
     border-color: transparent rgb(255, 255, 255) transparent transparent;
   }
- 
+
 }
+
 .page3 {
   height: 1400vh;
   width: 100%;
@@ -220,8 +244,8 @@ max-width: 1250px;
   background-repeat: round;
   border-radius: 1vw;
   background-image: url("./assets/webimage.png");
-  background-size:cover ;
-/* border: 1px solid red; */
+  background-size: cover;
+  /* border: 1px solid red; */
   background-attachment: fixed;
   /* border: 1px solid red; */
 }
@@ -236,6 +260,7 @@ max-width: 1250px;
   z-index: 1;
   padding: 15px;
 }
+
 .textbox {
   /* border: 1px solid red; */
   width: 100%;
@@ -244,10 +269,11 @@ max-width: 1250px;
   font-family: "futura";
   z-index: 1;
   color: #fffefe;
-  
+
 }
+
 @media (max-width : 550px) {
-  .textbox{
+  .textbox {
     font-size: 0.7rem;
-   }
+  }
 }

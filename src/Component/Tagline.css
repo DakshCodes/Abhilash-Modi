@@ -1,0 +1,112 @@
+.tagline {
+    background-color: #000;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-title {
+    width: 30rem;
+    flex-grow: 1;
+    display: flex;
+    padding: 70px 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+@media (max-width:800px) {
+
+    .tagline {
+        height: 180px;
+    }
+
+    .profile-title {
+        padding: 10px 50px !important;
+        gap: 0rem !important;
+    }
+
+    .title-point {
+        font-size: 4.4vmax !important;
+        padding: 10px 10px !important;
+        line-height: 0.9 !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        gap: 0rem !important;
+    }
+
+    .title-point:nth-child(2) {
+        margin-left: 0rem !important;
+    }
+
+    .arrow-icon {
+        padding: 0px 0px !important;
+    }
+
+
+    .arrow-icon svg {
+        display: none;
+        width: 0vmax !important;
+    }
+
+    .arrow-title {
+        display: none !important;
+    }
+
+}
+
+.titles-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title-point {
+    color: #fff;
+    display: flex;
+    background-color: #000;
+    width: max-content;
+    font-size: 3.4vmax;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 20px;
+    line-height: 1.2;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 2px;
+}
+
+.title-point:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+
+.arrow-icon svg {
+    width: 3vmax;
+}
+
+.arrow-title {
+    height: 6vmax;
+    width: 6vmax;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-title svg {
+    height: 3.5vmax;
+}

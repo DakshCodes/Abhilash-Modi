@@ -14,14 +14,14 @@ function PreLoader() {
                 x: 0,
                 ease: "expo.inOut",
             });
-            gsap.to(".preloader", 5, {
+            gsap.to(".preloader", 4, {
                 opacity: 0,
                 ease: "expo.inOut",
             });
             gsap.to(".preloader", {
                 y: "-100%",
                 ease: "expo.inOut",
-                delay:3
+                delay:2.7
             });
 
 

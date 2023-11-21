@@ -65,6 +65,7 @@ function App() {
 
         {/* Dost */}
         <Route path='/dost' element={<Dost />} />
+        
         <Route path='/about' element={<About />} />
 
       </Routes>

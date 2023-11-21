@@ -243,7 +243,7 @@
 @media (max-width: 1000px) {
     #hero {
         position: relative;
-        height: 150vh;
+        height: 100vh;
         width: 100%;
         background-color: #92b8cd !important;
         color: #414143 !important;
@@ -301,9 +301,9 @@
 
     .hero-container {
         position: absolute;
-        bottom: -30%;
+        bottom: -100%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 22%);
     }
 
 
@@ -311,7 +311,7 @@
         display: inline-block;
         width: 600px;
         text-align: center;
-        font-size: 9vmax;
+        font-size: 9vmax !important;
         font-weight: 100;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
@@ -364,8 +364,9 @@
     }
 
     .expore-btn {
+        display: none;
         position: absolute;
-        top: 80%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -20%);
     }
