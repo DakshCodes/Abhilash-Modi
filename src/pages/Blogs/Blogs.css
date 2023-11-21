@@ -1,0 +1,199 @@
+.banner {
+    min-height: 80vh;
+    /* border: 2px solid red; */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://abhilashmodi.com/images/ablognew.jpg) center center/cover no-repeat fixed;
+    /* filter: blur(3px); */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.blog-container {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.search {
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    display: flex;
+    padding: 1rem 1rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 400;
+
+}
+
+.quote {
+    /* margin-top: 2rem; */
+    /* border: 1px solid ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1320px;
+    margin: 2rem auto;
+    
+    
+}
+
+.boxShadow{
+    box-shadow: 0px 4px 25px 2px rgba(0,0,0,0.1);
+    /* border: 2px solid red; */
+}
+
+.quote p {
+    font-family: 'Syne', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 100;
+    width: 30%;
+    /* border: 1px solid ; */
+    text-align: center;
+}
+
+.blogs{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin: 1rem auto;
+    padding: 0 2rem;
+    max-width: 1190px;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.blog-card{
+    /* background-color: cyan; */
+    /* box-shadow: 0px 4px 4px 14px hsl(355deg 25% 15% / 10%); */
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
+    /* border: 2px solid green; */
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 1.5rem;
+}
+
+.blog-image{
+    width: 100%;
+    height: 200px;
+    /* overflow: hidden; */
+}
+
+.blog-card img{
+    border-radius: 0.4rem;
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-card .title{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    flex: 1;
+    /* height: fit-content; */
+    /* border: 1px solid; */
+    font-weight: bolder;
+}
+
+.blog-card .title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blog-card .introlines{
+    position: relative;
+    max-height: 100px;
+    overflow: hidden;
+    padding: 0 0.8rem 0 0;
+    font-size: 1rem;
+}
+
+.blog-card .introlines::before{
+    position: absolute;
+    content: "...";
+    bottom: 0;
+    right: 0;
+}
+
+.singleBlog img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    /* filter: ; */
+    filter: brightness(0.8) blur(5px);
+    /* padding: 2rem; */
+}
+
+
+/* .blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin: 2rem auto;
+    justify-content: center;
+    column-gap: 1rem;
+    max-width: 1320px;
+    border: 1px solid red;
+}
+.blog-card{
+    cursor: pointer;
+    margin: 1.5rem 0;
+    border: 2px solid pink;
+    width: 25rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-image{
+    position: relative;
+    border: 2px solid green;
+    overflow: hidden;
+    
+    width:14rem;
+    height: 50%;
+    
+}
+
+.blog-image::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.blog-image img{
+    border: 2px solid green;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 180px;
+}
+
+.blog-image:hover img{
+    transform: scale(1.2);
+} */
+
+
+@media screen and (max-width : 600px) {
+    .banner {
+        background: url(../assets/blog.jpg) center center/cover no-repeat fixed;
+        ;
+    }
+}

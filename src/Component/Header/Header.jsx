@@ -178,9 +178,13 @@ const Header = () => {
                             <Link to={'/impact'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Imapact</span></div>
                             </Link>
-                            <div className="nav-button"><i className="fas fa-images" /><span>Seekh</span></div>
+                            <Link to={'/seekh'} data-nav-toggler>
+                                <div className="nav-button"><i className="fas fa-images" /><span>Seekh</span></div>
+                            </Link>
                             <div className="nav-button"><i className="fas fa-images" /><span>Videos</span></div>
-                            <div className="nav-button"><i className="fas fa-images" /><span>My Thoughts</span></div>
+                            <Link to={'/blogs'} data-nav-toggler>
+                                <div className="nav-button"><i className="fas fa-images" /><span>My Thoughts</span></div>
+                            </Link>
                             <div className="nav-button"><i className="fas fa-images" /><span>Contact Me</span></div>
                         </div>
                     </ul>
