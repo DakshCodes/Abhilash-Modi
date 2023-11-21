@@ -44,28 +44,6 @@ const bulkImages = [
 
 const Featured = () => {
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger) // Register ScrollTrigger plugin
-
-        gsap.set('.featured-head-div span', {
-            y: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
-            opacity: 0
-        })
-
-        // Animation for individual letters in the about-head-div
-        gsap.to('.featured-head-div span', {
-            y: (i, el) => 0,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: '.featured',
-                start: '10% bottom',
-                end: '50% bottom',
-                scrub: 1,
-                markers:true
-            }
-        })
-    }, [])
-
     return (
         <div className="featured">
             <footer className="featured-head">

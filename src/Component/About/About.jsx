@@ -10,22 +10,6 @@ const Info = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger) // Register ScrollTrigger plugin
 
-        gsap.set('.about-head-div span', {
-            y: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
-            opacity: 0
-        })
-
-        // Animation for individual letters in the about-head-div
-        gsap.to('.about-head-div span', {
-            y: (i, el) => 0,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: '.about-head',
-                start: '-40% bottom',
-                end: '50% bottom',
-                scrub: 1,
-            }
-        })
 
         // Initialize SplitType for text animation
         const typeSplit = new SplitType('.about__p p', {
