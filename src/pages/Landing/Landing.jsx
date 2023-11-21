@@ -10,8 +10,8 @@ const Landing = () => {
         <>
             <Hero />
             <Info />
-            {/* <Journey /> */}
             <Featured />
+            <Journey />
         </>
     )
 }

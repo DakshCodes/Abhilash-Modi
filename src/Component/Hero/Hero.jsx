@@ -15,17 +15,17 @@ const Hero = () => {
             x: -100,
         })
         gsap.set(".dost-toggle ", {
-            opacity:0,
+            opacity: 0,
             x: 100,
         })
 
         gsap.to(".dost-toggle ", {
-            opacity:1,
+            opacity: 1,
             x: 0,
-            duration:1,
-            delay:3
+            duration: 1,
+            delay: 3
         })
-      
+
 
         gsap.set('.moto h2', {
             opacity: 0,
@@ -54,13 +54,6 @@ const Hero = () => {
             duration: 0.3,
             ease: 'sine.inOut',
             delay: -0.7
-        }).to('.moto h2', {
-            opacity: 1,
-            x: 0,
-            duration: 0.2,
-            ease: 'sine.out',
-            stagger: 0.1,
-            delay: -0.3
         }).to(".expore-btn button", {
             opacity: 1,
             x: 1,

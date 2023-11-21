@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Journey.css';
 import anime from 'animejs'; // Import anime.js library
 import { gsap } from 'gsap'; // Import gsap library
@@ -12,48 +12,58 @@ import records from '../../assets/images/recordes.webp';
 import motivator from '../../assets/images/am-pic3.jpg';
 
 const Journey = () => {
-    const titleRef = useRef(null);
-    const cardsRef = useRef([]);
+    const [titleText, setTitleText] = useState('The Journey');
+    const [activeIndex, setActiveIndex] = useState(0);
+
 
     useEffect(() => {
-        const titleText = "The Journey";
-        titleRef.current.querySelector('span').innerText = titleText;
+        document.querySelector('.title h3 span').innerText = titleText;
+        const cards = document.querySelectorAll('.card');
+        const stackArea = document.querySelector('.stack-area');
 
-        const cards = cardsRef.current;
 
-        function rotateCards() {
+        const rotateCards = () => {
             let angle = 0;
-            cards.forEach((card) => {
-                if (card.classList.contains('active')) {
+            cards.forEach((card, index) => {
+                if (index === activeIndex) {
                     card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
                 } else {
                     card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
                     angle = angle - 2;
                 }
             });
-        }
+        };
 
-        function animateTitleText(newText) {
+        const animateTitleText = (newText) => {
             anime({
-                targets: titleRef.current.querySelector('h3'),
-                opacity: [1, 0.5],
+                targets: '.title h3',
+                opacity: [1],
                 duration: 100,
                 easing: 'linear',
-                complete: function () {
-                    titleRef.current.querySelector('span').innerText = newText;
+                complete: () => {
+                    document.querySelector('.title h3 span').innerText = newText;
                     anime({
-                        targets: titleRef.current.querySelector('h3'),
-                        opacity: [0.5, 1],
+                        targets: '.title h3',
+                        opacity: [1],
                         duration: 900,
                         easing: 'linear',
                     });
                 },
             });
-        }
+        };
 
-        function handleScroll() {
-            const stackArea = document.querySelector('.stack-area');
-            const proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
+        ScrollTrigger.create({
+            trigger: '.right-ex',
+            start: '40% 50%',
+            end: '80% 50%',
+            onEnter: () => animateTitleText(cards[0].querySelector('.experience-title').innerText),
+            onLeaveBack: () => animateTitleText(titleText),
+            onEnterBack: () => animateTitleText(cards[0].querySelector('.experience-title').innerText),
+            // markers: true
+        });
+
+        const handleScroll = () => {
+            let proportion = stackArea.getBoundingClientRect().top / window.innerHeight;
             if (proportion <= 0) {
                 const n = cards.length;
                 let index = Math.ceil((proportion * n) / 2);
@@ -68,38 +78,77 @@ const Journey = () => {
                         cards[i].classList.remove('active');
                     }
                 }
+                setActiveIndex(index);
                 rotateCards();
             }
-        }
+        };
+
         window.addEventListener('scroll', handleScroll);
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        ScrollTrigger.create({
-            trigger: ".right-ex",
-            start: '40% 50%',
-            end: '80% 50%',
-            onEnter: () => {
-                const firstCard = cardsRef.current[0];
-                if (firstCard) {
-                    const text = firstCard.querySelector(".experience-title")?.innerText || "";
-                    animateTitleText(text);
-                }
-            },
-            onLeaveBack: () => animateTitleText(titleText),
-            onEnterBack: () => {
-                const firstCard = cardsRef.current[0];
-                if (firstCard) {
-                    const text = firstCard.querySelector(".experience-title")?.innerText || "";
-                    animateTitleText(text);
-                }
-            },
-        });
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
-    }, []);
+    }, [activeIndex]);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const mediaQuery = window.matchMedia('(max-width: 1300px)');
+        gsap.set('.left-ex', {
+            y: -300,
+            x: 500,
+        });
+
+            gsap.set('.right-ex', {
+                opacity: 0,
+            });
+
+            let scroll_tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.center-ex',
+                    start: '-1% center',
+                    scrub: 3,
+                    end: '10%',
+                },
+            });
+
+            let scroll_tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.center-ex',
+                    start: '80% center',
+                    scrub: true,
+                    end: '90%',
+                },
+            });
+
+            scroll_tl.to('#svg-ex', {
+                rotation: '-90deg',
+                duration: 0.2,
+                ease: 'expo.inOut',
+            }, 'a');
+
+            scroll_tl.to('.left-ex', {
+                x: 0,
+                y: 0,
+                duration: 0.2,
+                ease: 'expo.inOut',
+            }, 'a');
+
+            scroll_tl.to('.right-ex', {
+                opacity: 1,
+                duration: 0.2,
+                delay: -0.19,
+                ease: 'expo.inOut',
+            });
+
+            // Return cleanup function to prevent memory leaks
+            return () => {
+                scroll_tl.kill();
+                scroll_tl2.kill();
+            };
+
+    })
 
 
     return (
@@ -107,7 +156,7 @@ const Journey = () => {
         <div className="center-ex">
             <div className="stack-area" >
                 <div className="left-ex">
-                    <div className="title" ref={titleRef}>
+                    <div className="title">
                         <h3>
                             <span />
                             <svg id="svg-ex" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

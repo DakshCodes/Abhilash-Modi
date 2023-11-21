@@ -58,9 +58,10 @@ const Featured = () => {
             opacity: 1,
             scrollTrigger: {
                 trigger: '.featured',
-                start: '-40% bottom',
+                start: '10% bottom',
                 end: '50% bottom',
                 scrub: 1,
+                markers:true
             }
         })
     }, [])

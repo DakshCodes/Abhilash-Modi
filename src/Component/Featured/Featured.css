@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 5rem;
-    margin-top: 5rem;
+    margin-top: rem;
     overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     height: 100px;
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 .featured-head-div {
