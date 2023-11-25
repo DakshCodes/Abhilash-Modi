@@ -232,6 +232,22 @@ body::-webkit-scrollbar {
     border-width: 8px 16px 8px 0;
     border-color: transparent rgb(255, 255, 255) transparent transparent;
   }
+  .page3 {
+    height: 1400vh;
+    width: 100%;
+    margin-top: 5vw;
+    /* border-radius: 20px 20px 0 0; */
+    position: relative;
+    background-repeat: no-repeat !important;
+    border-radius: 1vw;
+    background-image: url("./assets/webimage.png");
+    background-size: contain !important;
+    background-position: center;
+    /* border: 1px solid red; */
+    background-attachment: fixed;
+    /* border: 1px solid red; */
+  }
+  
 
 }
 

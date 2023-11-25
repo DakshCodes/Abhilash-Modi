@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4rem;
 }
 
 .wrapper-img {
@@ -31,7 +32,6 @@
     width: 70vmax;
     height: 100%;
     border-radius: 4rem;
-    border: none;
 }
 
 .image {
@@ -41,6 +41,7 @@
 }
 
 #hero img {
+    border-radius: 4rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -87,7 +88,6 @@
   
     
     .hero-container h1 {
-
         font-size: 7vmax !important;
     }
 
@@ -243,7 +243,7 @@
 @media (max-width: 1000px) {
     #hero {
         position: relative;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         background-color: #92b8cd !important;
         color: #414143 !important;
@@ -252,9 +252,9 @@
 
     .hero-image {
         position: absolute;
-        top: 10%;
+        top: 7%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 7%);
         width: 50vmax;
         height: 60vh;
         /* border: 1px solid red; */
@@ -301,7 +301,7 @@
 
     .hero-container {
         position: absolute;
-        bottom: -100%;
+        bottom: -60%;
         left: 50%;
         transform: translate(-50%, 22%);
     }

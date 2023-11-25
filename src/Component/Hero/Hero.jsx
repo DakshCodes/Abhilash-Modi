@@ -86,6 +86,8 @@ const Hero = () => {
         });
 
     }, []);
+
+  
     return (<>
         <div id="hero">
             <div className="container-hero">

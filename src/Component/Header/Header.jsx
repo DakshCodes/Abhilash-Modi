@@ -181,7 +181,7 @@ const Header = () => {
                             <Link to={'/seekh'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Seekh</span></div>
                             </Link>
-                            <div className="nav-button"><i className="fas fa-images" /><span>Videos</span></div>
+                            <div className="nav-button"><i className="fas fa-images" /><span><a target={'_blank'} href="https://www.youtube.com/@abhilashmodi964">Videos</a></span></div>
                             <Link to={'/blogs'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>My Thoughts</span></div>
                             </Link>

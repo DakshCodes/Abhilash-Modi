@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Effortless from '../Effortless'
 import './Footer.css'
 
@@ -10,18 +11,30 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Navigation</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">Imapact</a></li>
-              <li><a href="#">Seekh</a></li>
+              <Link to={'/'}>
+                <li><a href="">Home</a></li>
+              </Link>
+              <Link to={'/about'}>
+                <li><a>about us</a></li>
+              </Link>
+              <Link to={'/impact'}>
+                <li><a>Imapact</a></li>
+              </Link>
+              <Link to={'/seekh'}>
+                <li><a href="#">Seekh</a></li>
+              </Link>
             </ul>
           </div>
           <div className="footer-col">
             <h4>help</h4>
             <ul>
-              <li><a href="#">Seekh</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">My Thoughts</a></li>
+              <Link to={'/seekh'}>
+                <li><a href="#">Seekh</a></li>
+              </Link>
+                <li><a target={'_blank'} href="https://www.youtube.com/@abhilashmodi964">Videos</a></li>
+              <Link to={'/blogs'}>
+                <li><a href="">My Thoughts</a></li>
+              </Link>
             </ul>
           </div>
           <div className="footer-col">

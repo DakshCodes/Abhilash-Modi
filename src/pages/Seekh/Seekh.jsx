@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Seekh.css"
 
 const Seekh = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // This line will scroll the window to the top
+  }, [])
   return (
     <main className='main'>
       <section className='mx-auto max-w-[1390px]  my-8'>
@@ -53,13 +57,13 @@ const Seekh = () => {
               <div className='flex flex-col mt-4 md:w-[50%]'>
                 <p className='text-3xl border-b-8 w-fit pb-2 border-[#0000009b] mb-4 font-semibold'>Mission</p>
                 <ul className='text-justify text-[1.2rem]'>
-                    <li>In a decade, we have an elite mission to spread ourselves not only in district and state but nation.</li>
-                    <li>To enable people to take responsibility for the contemptuous conditions.</li>
-                    <li>Motivate to seek resolution through individual and collective action thereby enabling youth to realise their full potential.</li>
-                    <li>To make people discover their potential for action and change.</li>
-                    <li>To enable peoples’ collective endeavours.</li>
-                    <li>To remove social gaffes & modern world related problems from society.</li>
-                    <li>To inculcate solitary in youngsters and rooting-up loneliness.</li>
+                  <li>In a decade, we have an elite mission to spread ourselves not only in district and state but nation.</li>
+                  <li>To enable people to take responsibility for the contemptuous conditions.</li>
+                  <li>Motivate to seek resolution through individual and collective action thereby enabling youth to realise their full potential.</li>
+                  <li>To make people discover their potential for action and change.</li>
+                  <li>To enable peoples’ collective endeavours.</li>
+                  <li>To remove social gaffes & modern world related problems from society.</li>
+                  <li>To inculcate solitary in youngsters and rooting-up loneliness.</li>
                 </ul>
               </div>
 

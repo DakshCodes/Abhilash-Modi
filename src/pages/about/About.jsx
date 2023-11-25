@@ -49,18 +49,7 @@ const About = () => {
   const image = useRef(null);
   useEffect(() => {
     AOS.init({ duration: 3000 });
-    // const el = page3.current;
-    // const el1 = image.current;
-    // gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: el,
-    //     pin: el1,
-
-    //     start: "top 300px",
-    //     markers: true,
-    //     end: "bottom bottom",
-    //   },
-    // });
+    window.scrollTo(0, 0); // This line will scroll the window to the top
   }, []);
 
   return (

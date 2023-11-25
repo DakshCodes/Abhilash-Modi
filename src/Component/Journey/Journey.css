@@ -281,8 +281,8 @@
     }
 
     .card {
-        width: 53vmax;
-        height: 33vmax;
+        width: 48vmax;
+        height: 28vmax;
         box-sizing: border-box;
         border-radius: 6mm;
         display: flex;

@@ -172,7 +172,6 @@ const Journey = () => {
                 </div>
                 <div className="active-jou">
                     <div className="active-title">
-                        The Journey
                     </div>
                 </div>
                 <div className="right-ex">

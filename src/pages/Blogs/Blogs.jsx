@@ -129,6 +129,9 @@ const Blogs = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // This line will scroll the window to the top
+}, [])
   return (
     <main className='blog-container'>
 
@@ -150,7 +153,7 @@ const Blogs = () => {
         <div className={`border border-black w-full h-[3rem] flex items-center text-lg px-4 py-2 rounded-full`}>
           <input
             className='outline-none border-none h-full w-full '
-            type="text" placeholder={scroll} />
+            type="text" placeholder={"Search"} />
         </div>
       </div>
 

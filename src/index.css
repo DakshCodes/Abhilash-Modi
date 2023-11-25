@@ -84,15 +84,15 @@ body {
 .dost-toggle {
   position: fixed;
   right: -1%;
-  top: 48%;
-  transform: translate(0%, -52%);
+  top: 20%;
+  transform: translate(0%, -80%);
   z-index: 99;
   /* rotate: -90deg; */
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
 }
 
 
-@media (max-width:500px) {
+@media (max-width:800px) {
   .dost-toggle label {
     background-color: #fff;
     display: flex;
@@ -141,8 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  height: 3.5vmax;
+  height: 3vmax;
   width: 16vw;
   cursor: pointer;
   user-select: none;

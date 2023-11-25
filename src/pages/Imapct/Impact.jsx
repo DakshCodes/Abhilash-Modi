@@ -125,6 +125,9 @@ const Impact = () => {
 
     }, [])
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // This line will scroll the window to the top
+    }, [])
 
     return (
         <>
@@ -164,7 +167,8 @@ const Impact = () => {
                 </div>
                 <div className="one">
                     <h1>
-                        IMPACT
+
+                        Impact
                         On SOCIETY
                     </h1>
                 </div>

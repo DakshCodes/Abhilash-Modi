@@ -31,6 +31,7 @@ const SingleBlog = () => {
 
   useEffect(() => {
     getData();
+    window.scrollTo(0, 0); // This line will scroll the window to the top
   }, []);
   return (
     <div className=''>
