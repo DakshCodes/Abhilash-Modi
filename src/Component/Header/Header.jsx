@@ -176,7 +176,7 @@ const Header = () => {
                                 <div className="nav-button"><i className="fas fa-palette" /><span>About</span></div>
                             </Link>
                             <Link to={'/impact'} data-nav-toggler>
-                                <div className="nav-button"><i className="fas fa-images" /><span>Imapact</span></div>
+                                <div className="nav-button"><i className="fas fa-images" /><span>Impact</span></div>
                             </Link>
                             <Link to={'/seekh'} data-nav-toggler>
                                 <div className="nav-button"><i className="fas fa-images" /><span>Seekh</span></div>

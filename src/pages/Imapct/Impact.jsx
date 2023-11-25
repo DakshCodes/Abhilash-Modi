@@ -6,6 +6,7 @@ import './Impact.css'
 const Impact = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0); // This line will scroll the window to the top
         const wrapper = document.querySelector(".wrapper-impact");
         const carousel = document.querySelector(".carousel-impact");
         const firstCardWidth = carousel.querySelector(".card-impact").offsetWidth;
@@ -125,9 +126,7 @@ const Impact = () => {
 
     }, [])
 
-    useEffect(() => {
-        window.scrollTo(0, 0); // This line will scroll the window to the top
-    }, [])
+  
 
     return (
         <>
